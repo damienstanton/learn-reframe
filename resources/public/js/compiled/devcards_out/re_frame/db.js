@@ -4,4 +4,4 @@ goog.require('cljs.core');
 goog.require('reagent.core');
 re_frame.db.app_db = reagent.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
 
-//# sourceMappingURL=db.js.map?rel=1466621023265
+//# sourceMappingURL=db.js.map?rel=1466621246670

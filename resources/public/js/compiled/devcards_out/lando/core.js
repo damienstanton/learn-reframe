@@ -13,15 +13,15 @@ lando.core.ratom2 = reagent.ratom.make_reaction.call(null,(function (){
 return new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"b","b",1482224470),new cljs.core.Keyword(null,"a","a",-2123407586).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,lando.core.app_db))], null);
 }));
 lando.core.ratom3 = reagent.ratom.make_reaction.call(null,(function (){
-var pred__29290 = cljs.core._EQ_;
-var expr__29291 = new cljs.core.Keyword(null,"b","b",1482224470).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,lando.core.ratom2));
-if(cljs.core.truth_(pred__29290.call(null,(0),expr__29291))){
+var pred__39626 = cljs.core._EQ_;
+var expr__39627 = new cljs.core.Keyword(null,"b","b",1482224470).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,lando.core.ratom2));
+if(cljs.core.truth_(pred__39626.call(null,(0),expr__39627))){
 return "Hello";
 } else {
-if(cljs.core.truth_(pred__29290.call(null,(1),expr__29291))){
+if(cljs.core.truth_(pred__39626.call(null,(1),expr__39627))){
 return "World";
 } else {
-throw (new Error([cljs.core.str("No matching clause: "),cljs.core.str(expr__29291)].join('')));
+throw (new Error([cljs.core.str("No matching clause: "),cljs.core.str(expr__39627)].join('')));
 }
 }
 }));
@@ -38,7 +38,7 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 });
 devcards.core.register_card.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"path","path",-188191168),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"lando.core","lando.core",-1928636405),new cljs.core.Keyword(null,"signal-flow-example","signal-flow-example",1005456299)], null),new cljs.core.Keyword(null,"func","func",-238706040),(function (){
 return devcards.core.card_base.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),"signal-flow-example",new cljs.core.Keyword(null,"documentation","documentation",1889593999),"```clojure\n;; The signal\n(def app-db (atom {:a 0}))\n\n;; A demo reactive atom that derefs the signal state\n(def ratom2 (reaction {:b (:a @app-db)})\n\n;; Another ratom that conditionally updates based on the state in ratom2.\n;; Here we can start to see how the signal wiring works\n  (def ratom3 (reaction (condp = (:b @ratom2))\n                        0 \"Hello\"\n                        1 \"World\")))\n```",new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){
-if(typeof lando.core.t_lando$core29293 !== 'undefined'){
+if(typeof lando.core.t_lando$core39629 !== 'undefined'){
 } else {
 
 /**
@@ -47,26 +47,26 @@ if(typeof lando.core.t_lando$core29293 !== 'undefined'){
  * @implements {cljs.core.IWithMeta}
  * @implements {devcards.core.IDevcardOptions}
 */
-lando.core.t_lando$core29293 = (function (meta29294){
-this.meta29294 = meta29294;
+lando.core.t_lando$core39629 = (function (meta39630){
+this.meta39630 = meta39630;
 this.cljs$lang$protocol_mask$partition0$ = 393216;
 this.cljs$lang$protocol_mask$partition1$ = 0;
 })
-lando.core.t_lando$core29293.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_29295,meta29294__$1){
+lando.core.t_lando$core39629.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_39631,meta39630__$1){
 var self__ = this;
-var _29295__$1 = this;
-return (new lando.core.t_lando$core29293(meta29294__$1));
+var _39631__$1 = this;
+return (new lando.core.t_lando$core39629(meta39630__$1));
 });
 
-lando.core.t_lando$core29293.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_29295){
+lando.core.t_lando$core39629.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_39631){
 var self__ = this;
-var _29295__$1 = this;
-return self__.meta29294;
+var _39631__$1 = this;
+return self__.meta39630;
 });
 
-lando.core.t_lando$core29293.prototype.devcards$core$IDevcardOptions$ = true;
+lando.core.t_lando$core39629.prototype.devcards$core$IDevcardOptions$ = true;
 
-lando.core.t_lando$core29293.prototype.devcards$core$IDevcardOptions$_devcard_options$arity$2 = (function (this__29188__auto__,devcard_opts__29189__auto__){
+lando.core.t_lando$core39629.prototype.devcards$core$IDevcardOptions$_devcard_options$arity$2 = (function (this__29188__auto__,devcard_opts__29189__auto__){
 var self__ = this;
 var this__29188__auto____$1 = this;
 return cljs.core.assoc.call(null,devcard_opts__29189__auto__,new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){var v__29207__auto__ = lando.core.signal_flow_example;
@@ -82,31 +82,31 @@ return reagent.core.as_element.call(null,v__29207__auto__);
 })(),new cljs.core.Keyword(null,"options","options",99638489),cljs.core.merge.call(null,cljs.core.PersistentArrayMap.EMPTY,devcards.core.assert_options_map.call(null,new cljs.core.Keyword(null,"options","options",99638489).cljs$core$IFn$_invoke$arity$1(devcard_opts__29189__auto__))));
 });
 
-lando.core.t_lando$core29293.getBasis = (function (){
-return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta29294","meta29294",356027945,null)], null);
+lando.core.t_lando$core39629.getBasis = (function (){
+return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta39630","meta39630",-1473999928,null)], null);
 });
 
-lando.core.t_lando$core29293.cljs$lang$type = true;
+lando.core.t_lando$core39629.cljs$lang$type = true;
 
-lando.core.t_lando$core29293.cljs$lang$ctorStr = "lando.core/t_lando$core29293";
+lando.core.t_lando$core39629.cljs$lang$ctorStr = "lando.core/t_lando$core39629";
 
-lando.core.t_lando$core29293.cljs$lang$ctorPrWriter = (function (this__19102__auto__,writer__19103__auto__,opt__19104__auto__){
-return cljs.core._write.call(null,writer__19103__auto__,"lando.core/t_lando$core29293");
+lando.core.t_lando$core39629.cljs$lang$ctorPrWriter = (function (this__19102__auto__,writer__19103__auto__,opt__19104__auto__){
+return cljs.core._write.call(null,writer__19103__auto__,"lando.core/t_lando$core39629");
 });
 
-lando.core.__GT_t_lando$core29293 = (function lando$core$__GT_t_lando$core29293(meta29294){
-return (new lando.core.t_lando$core29293(meta29294));
+lando.core.__GT_t_lando$core39629 = (function lando$core$__GT_t_lando$core39629(meta39630){
+return (new lando.core.t_lando$core39629(meta39630));
 });
 
 }
 
-return (new lando.core.t_lando$core29293(null));
+return (new lando.core.t_lando$core39629(null));
 })()
 ,new cljs.core.Keyword(null,"initial-data","initial-data",-1315709804),cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"options","options",99638489),cljs.core.PersistentArrayMap.EMPTY], null));
 })], null));
 devcards.core.register_card.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"path","path",-188191168),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"lando.core","lando.core",-1928636405),new cljs.core.Keyword(null,"components","components",-1073188942)], null),new cljs.core.Keyword(null,"func","func",-238706040),(function (){
 return devcards.core.card_base.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),"components",new cljs.core.Keyword(null,"documentation","documentation",1889593999),"```clojure\n(def n (atom \"Damien\"))\n\n(defn greeter [name]\n  [:div \"Hi, \" @name])\n```\nIf we then call `(greeter n)`, we get:\n",new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){
-if(typeof lando.core.t_lando$core29296 !== 'undefined'){
+if(typeof lando.core.t_lando$core39632 !== 'undefined'){
 } else {
 
 /**
@@ -115,26 +115,26 @@ if(typeof lando.core.t_lando$core29296 !== 'undefined'){
  * @implements {cljs.core.IWithMeta}
  * @implements {devcards.core.IDevcardOptions}
 */
-lando.core.t_lando$core29296 = (function (meta29297){
-this.meta29297 = meta29297;
+lando.core.t_lando$core39632 = (function (meta39633){
+this.meta39633 = meta39633;
 this.cljs$lang$protocol_mask$partition0$ = 393216;
 this.cljs$lang$protocol_mask$partition1$ = 0;
 })
-lando.core.t_lando$core29296.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_29298,meta29297__$1){
+lando.core.t_lando$core39632.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_39634,meta39633__$1){
 var self__ = this;
-var _29298__$1 = this;
-return (new lando.core.t_lando$core29296(meta29297__$1));
+var _39634__$1 = this;
+return (new lando.core.t_lando$core39632(meta39633__$1));
 });
 
-lando.core.t_lando$core29296.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_29298){
+lando.core.t_lando$core39632.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_39634){
 var self__ = this;
-var _29298__$1 = this;
-return self__.meta29297;
+var _39634__$1 = this;
+return self__.meta39633;
 });
 
-lando.core.t_lando$core29296.prototype.devcards$core$IDevcardOptions$ = true;
+lando.core.t_lando$core39632.prototype.devcards$core$IDevcardOptions$ = true;
 
-lando.core.t_lando$core29296.prototype.devcards$core$IDevcardOptions$_devcard_options$arity$2 = (function (this__29188__auto__,devcard_opts__29189__auto__){
+lando.core.t_lando$core39632.prototype.devcards$core$IDevcardOptions$_devcard_options$arity$2 = (function (this__29188__auto__,devcard_opts__29189__auto__){
 var self__ = this;
 var this__29188__auto____$1 = this;
 return cljs.core.assoc.call(null,devcard_opts__29189__auto__,new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){var v__29207__auto__ = lando.core.greeter.call(null,lando.core.n);
@@ -150,25 +150,25 @@ return reagent.core.as_element.call(null,v__29207__auto__);
 })(),new cljs.core.Keyword(null,"options","options",99638489),cljs.core.merge.call(null,cljs.core.PersistentArrayMap.EMPTY,devcards.core.assert_options_map.call(null,new cljs.core.Keyword(null,"options","options",99638489).cljs$core$IFn$_invoke$arity$1(devcard_opts__29189__auto__))));
 });
 
-lando.core.t_lando$core29296.getBasis = (function (){
-return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta29297","meta29297",-674787472,null)], null);
+lando.core.t_lando$core39632.getBasis = (function (){
+return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta39633","meta39633",-1991234639,null)], null);
 });
 
-lando.core.t_lando$core29296.cljs$lang$type = true;
+lando.core.t_lando$core39632.cljs$lang$type = true;
 
-lando.core.t_lando$core29296.cljs$lang$ctorStr = "lando.core/t_lando$core29296";
+lando.core.t_lando$core39632.cljs$lang$ctorStr = "lando.core/t_lando$core39632";
 
-lando.core.t_lando$core29296.cljs$lang$ctorPrWriter = (function (this__19102__auto__,writer__19103__auto__,opt__19104__auto__){
-return cljs.core._write.call(null,writer__19103__auto__,"lando.core/t_lando$core29296");
+lando.core.t_lando$core39632.cljs$lang$ctorPrWriter = (function (this__19102__auto__,writer__19103__auto__,opt__19104__auto__){
+return cljs.core._write.call(null,writer__19103__auto__,"lando.core/t_lando$core39632");
 });
 
-lando.core.__GT_t_lando$core29296 = (function lando$core$__GT_t_lando$core29296(meta29297){
-return (new lando.core.t_lando$core29296(meta29297));
+lando.core.__GT_t_lando$core39632 = (function lando$core$__GT_t_lando$core39632(meta39633){
+return (new lando.core.t_lando$core39632(meta39633));
 });
 
 }
 
-return (new lando.core.t_lando$core29296(null));
+return (new lando.core.t_lando$core39632(null));
 })()
 ,new cljs.core.Keyword(null,"initial-data","initial-data",-1315709804),cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"options","options",99638489),cljs.core.PersistentArrayMap.EMPTY], null));
 })], null));
@@ -183,7 +183,7 @@ return new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMP
 });
 devcards.core.register_card.call(null,new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"path","path",-188191168),new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Keyword(null,"lando.core","lando.core",-1928636405),new cljs.core.Keyword(null,"subscriptions","subscriptions",1250949776)], null),new cljs.core.Keyword(null,"func","func",-238706040),(function (){
 return devcards.core.card_base.call(null,new cljs.core.PersistentArrayMap(null, 5, [new cljs.core.Keyword(null,"name","name",1843675177),"subscriptions",new cljs.core.Keyword(null,"documentation","documentation",1889593999),"```clojure\n  ;; Subscriptions introduce form-2 funcs\n  (def n2 (atom {:name \"Damien\"}))\n\n  (defn subscriptions []\n    (let [name (subscribe [:name-query])]\n      (fn []\n        [:div \"Hi again, \" @name])))\n  ```\n  Likewise if we call `(subscriptions)`, we get:\n  ",new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){
-if(typeof lando.core.t_lando$core29299 !== 'undefined'){
+if(typeof lando.core.t_lando$core39635 !== 'undefined'){
 } else {
 
 /**
@@ -192,26 +192,26 @@ if(typeof lando.core.t_lando$core29299 !== 'undefined'){
  * @implements {cljs.core.IWithMeta}
  * @implements {devcards.core.IDevcardOptions}
 */
-lando.core.t_lando$core29299 = (function (meta29300){
-this.meta29300 = meta29300;
+lando.core.t_lando$core39635 = (function (meta39636){
+this.meta39636 = meta39636;
 this.cljs$lang$protocol_mask$partition0$ = 393216;
 this.cljs$lang$protocol_mask$partition1$ = 0;
 })
-lando.core.t_lando$core29299.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_29301,meta29300__$1){
+lando.core.t_lando$core39635.prototype.cljs$core$IWithMeta$_with_meta$arity$2 = (function (_39637,meta39636__$1){
 var self__ = this;
-var _29301__$1 = this;
-return (new lando.core.t_lando$core29299(meta29300__$1));
+var _39637__$1 = this;
+return (new lando.core.t_lando$core39635(meta39636__$1));
 });
 
-lando.core.t_lando$core29299.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_29301){
+lando.core.t_lando$core39635.prototype.cljs$core$IMeta$_meta$arity$1 = (function (_39637){
 var self__ = this;
-var _29301__$1 = this;
-return self__.meta29300;
+var _39637__$1 = this;
+return self__.meta39636;
 });
 
-lando.core.t_lando$core29299.prototype.devcards$core$IDevcardOptions$ = true;
+lando.core.t_lando$core39635.prototype.devcards$core$IDevcardOptions$ = true;
 
-lando.core.t_lando$core29299.prototype.devcards$core$IDevcardOptions$_devcard_options$arity$2 = (function (this__29188__auto__,devcard_opts__29189__auto__){
+lando.core.t_lando$core39635.prototype.devcards$core$IDevcardOptions$_devcard_options$arity$2 = (function (this__29188__auto__,devcard_opts__29189__auto__){
 var self__ = this;
 var this__29188__auto____$1 = this;
 return cljs.core.assoc.call(null,devcard_opts__29189__auto__,new cljs.core.Keyword(null,"main-obj","main-obj",-1544409742),(function (){var v__29207__auto__ = lando.core.subscriptions.call(null);
@@ -227,25 +227,25 @@ return reagent.core.as_element.call(null,v__29207__auto__);
 })(),new cljs.core.Keyword(null,"options","options",99638489),cljs.core.merge.call(null,cljs.core.PersistentArrayMap.EMPTY,devcards.core.assert_options_map.call(null,new cljs.core.Keyword(null,"options","options",99638489).cljs$core$IFn$_invoke$arity$1(devcard_opts__29189__auto__))));
 });
 
-lando.core.t_lando$core29299.getBasis = (function (){
-return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta29300","meta29300",-213144905,null)], null);
+lando.core.t_lando$core39635.getBasis = (function (){
+return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"meta39636","meta39636",2079373484,null)], null);
 });
 
-lando.core.t_lando$core29299.cljs$lang$type = true;
+lando.core.t_lando$core39635.cljs$lang$type = true;
 
-lando.core.t_lando$core29299.cljs$lang$ctorStr = "lando.core/t_lando$core29299";
+lando.core.t_lando$core39635.cljs$lang$ctorStr = "lando.core/t_lando$core39635";
 
-lando.core.t_lando$core29299.cljs$lang$ctorPrWriter = (function (this__19102__auto__,writer__19103__auto__,opt__19104__auto__){
-return cljs.core._write.call(null,writer__19103__auto__,"lando.core/t_lando$core29299");
+lando.core.t_lando$core39635.cljs$lang$ctorPrWriter = (function (this__19102__auto__,writer__19103__auto__,opt__19104__auto__){
+return cljs.core._write.call(null,writer__19103__auto__,"lando.core/t_lando$core39635");
 });
 
-lando.core.__GT_t_lando$core29299 = (function lando$core$__GT_t_lando$core29299(meta29300){
-return (new lando.core.t_lando$core29299(meta29300));
+lando.core.__GT_t_lando$core39635 = (function lando$core$__GT_t_lando$core39635(meta39636){
+return (new lando.core.t_lando$core39635(meta39636));
 });
 
 }
 
-return (new lando.core.t_lando$core29299(null));
+return (new lando.core.t_lando$core39635(null));
 })()
 ,new cljs.core.Keyword(null,"initial-data","initial-data",-1315709804),cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"options","options",99638489),cljs.core.PersistentArrayMap.EMPTY], null));
 })], null));
@@ -275,4 +275,4 @@ return null;
 });
 lando.core.main.call(null);
 
-//# sourceMappingURL=core.js.map?rel=1466621024535
+//# sourceMappingURL=core.js.map?rel=1466621247863

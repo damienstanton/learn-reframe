@@ -26,23 +26,23 @@ return cljs.core.swap_BANG_.call(null,re_frame.subs.key__GT_fn,cljs.core.assoc,k
  * Returns a reagent/reaction which observes a part of app-db
  */
 re_frame.subs.subscribe = (function re_frame$subs$subscribe(var_args){
-var args27919 = [];
-var len__19571__auto___27923 = arguments.length;
-var i__19572__auto___27924 = (0);
+var args38470 = [];
+var len__19571__auto___38474 = arguments.length;
+var i__19572__auto___38475 = (0);
 while(true){
-if((i__19572__auto___27924 < len__19571__auto___27923)){
-args27919.push((arguments[i__19572__auto___27924]));
+if((i__19572__auto___38475 < len__19571__auto___38474)){
+args38470.push((arguments[i__19572__auto___38475]));
 
-var G__27925 = (i__19572__auto___27924 + (1));
-i__19572__auto___27924 = G__27925;
+var G__38476 = (i__19572__auto___38475 + (1));
+i__19572__auto___38475 = G__38476;
 continue;
 } else {
 }
 break;
 }
 
-var G__27921 = args27919.length;
-switch (G__27921) {
+var G__38472 = args38470.length;
+switch (G__38472) {
 case 1:
 return re_frame.subs.subscribe.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -52,7 +52,7 @@ return re_frame.subs.subscribe.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(a
 
 break;
 default:
-throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args27919.length)].join('')));
+throw (new Error([cljs.core.str("Invalid arity: "),cljs.core.str(args38470.length)].join('')));
 
 }
 });
@@ -71,10 +71,10 @@ re_frame.subs.subscribe.cljs$core$IFn$_invoke$arity$2 = (function (v,dynv){
 var key_v = re_frame.utils.first_in_vector.call(null,v);
 var handler_fn = cljs.core.get.call(null,cljs.core.deref.call(null,re_frame.subs.key__GT_fn),key_v);
 if(goog.DEBUG){
-var temp__4657__auto___27927 = cljs.core.seq.call(null,cljs.core.remove.call(null,((function (key_v,handler_fn){
-return (function (p1__27918_SHARP_){
-if(!((p1__27918_SHARP_ == null))){
-if((false) || (p1__27918_SHARP_.reagent$ratom$IReactiveAtom$)){
+var temp__4657__auto___38478 = cljs.core.seq.call(null,cljs.core.remove.call(null,((function (key_v,handler_fn){
+return (function (p1__38469_SHARP_){
+if(!((p1__38469_SHARP_ == null))){
+if((false) || (p1__38469_SHARP_.reagent$ratom$IReactiveAtom$)){
 return true;
 } else {
 return false;
@@ -84,9 +84,9 @@ return false;
 }
 });})(key_v,handler_fn))
 ,dynv));
-if(temp__4657__auto___27927){
-var not_reactive_27928 = temp__4657__auto___27927;
-re_frame.utils.warn.call(null,"re-frame: dynv contained parameters that don't implement IReactiveAtom: ",not_reactive_27928);
+if(temp__4657__auto___38478){
+var not_reactive_38479 = temp__4657__auto___38478;
+re_frame.utils.warn.call(null,"re-frame: dynv contained parameters that don't implement IReactiveAtom: ",not_reactive_38479);
 } else {
 }
 } else {
@@ -116,4 +116,4 @@ return cljs.core.deref.call(null,cljs.core.deref.call(null,sub));
 re_frame.subs.subscribe.cljs$lang$maxFixedArity = 2;
 
 
-//# sourceMappingURL=subs.js.map?rel=1466621023348
+//# sourceMappingURL=subs.js.map?rel=1466621246760

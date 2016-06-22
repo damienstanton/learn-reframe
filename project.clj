@@ -15,6 +15,7 @@
                  [datsync "0.0.1-SNAPSHOT"]
                  [posh "0.3.5"]
                  [datascript "0.15.0"]
+                 [prismatic/schema "1.1.2"]
                  [reagent "0.5.1"]
                  [re-frame "0.7.0"]
                  [re-com "0.8.3"]]

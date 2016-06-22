@@ -108,7 +108,26 @@ If we then call `(greeter n)`, we get:
         [:div
            (str \"There are \" @num \" items. Here are the top 20.\")
            (into [:div ] (map item-render @top-20))])))
+
+  ;; However this gets inefficient when `:items` is big. This is remedied by
+  ;; chaining reactions. Note the difference between this and the handler above
+  (register-sub
+    :sorted-items
+    (fn [db [_]]
+      (let [items      (reaction (get-in @db [:some :path :to :items]))]
+            sort-attr  (reaction (get-in @db [:sort-by]))]
+            (reaction (sort-by @sort-attr @items)))))
+```
+  Takeaways:
+
+  + One can chain reactions
+  + A reaction will only be re-run when its input Signals test not identical? to previous value.
+  + Extremely efficient checks, even for large, deep nested data structures.
+
+  On that last note, this would not be possible without Clojure(Script) [vectors](http://blog.higher-order.net/2009/02/01/understanding-clojures-persistentvector-implementation), which allow _fast_ node access time complexity - `O(log32n)` to be exact.
   ")
+
+
 
 (defn main []
   ;; conditionally start the app based on whether the #main-app-area

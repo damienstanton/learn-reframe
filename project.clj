@@ -1,4 +1,4 @@
-(defproject lando "0.1.0-SNAPSHOT"
+(defproject learnreframe "0.1.0-SNAPSHOT"
   :description "FIXME: write this!"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
@@ -31,24 +31,24 @@
               :builds [{:id "devcards"
                         :source-paths ["src"]
                         :figwheel { :devcards true}
-                        :compiler { :main       "lando.core"
+                        :compiler { :main       "learnreframe.core"
                                     :asset-path "js/compiled/devcards_out"
-                                    :output-to  "resources/public/js/compiled/lando_devcards.js"
+                                    :output-to  "resources/public/js/compiled/learnreframe_devcards.js"
                                     :output-dir "resources/public/js/compiled/devcards_out"
                                     :source-map-timestamp true}}
                        {:id "dev"
                         :source-paths ["src"]
                         :figwheel true
-                        :compiler {:main       "lando.core"
+                        :compiler {:main       "learnreframe.core"
                                    :asset-path "js/compiled/out"
-                                   :output-to  "resources/public/js/compiled/lando.js"
+                                   :output-to  "resources/public/js/compiled/learnreframe.js"
                                    :output-dir "resources/public/js/compiled/out"
                                    :source-map-timestamp true}}
                        {:id "prod"
                         :source-paths ["src"]
-                        :compiler {:main       "lando.core"
+                        :compiler {:main       "learnreframe.core"
                                    :asset-path "js/compiled/out"
-                                   :output-to  "resources/public/js/compiled/lando.js"
+                                   :output-to  "resources/public/js/compiled/learnreframe.js"
                                    :optimizations :advanced}}]}
 
   :figwheel { :css-dirs ["resources/public/css"]})

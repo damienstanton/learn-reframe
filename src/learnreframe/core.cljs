@@ -1,4 +1,4 @@
-(ns lando.core
+(ns learnreframe.core
   (:require
    [sablono.core :as sab :include-macros true]
    [reagent.core :as reagent :refer [atom]]
